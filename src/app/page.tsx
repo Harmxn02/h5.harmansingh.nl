@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
 import AdamBackground from "@/assets/images/adam.jpg";
 
@@ -20,6 +21,9 @@ export default function Home() {
 			{/* Content */}
 			<div className="relative z-10">
 				<Navigation />
+				<section className="pt-[20vh] sm:pt-[50vh]">
+					<Hero />
+				</section>
 			</div>
 		</div>
 	);
