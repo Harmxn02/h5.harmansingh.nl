@@ -4,7 +4,7 @@ import AdamBackground from "@/assets/images/adam.jpg";
 
 export default function Home() {
 	return (
-		<div className="relative min-h-screen max-w-screen overflow-hidden gap-16 font-[family-name:var(--font-geist-sans)]">
+		<div className="relative min-h-screen max-w-screen gap-16 overflow-hidden font-[family-name:var(--font-geist-sans)]">
 			{/* Blurred Background */}
 			<div
 				className="absolute inset-0 bg-cover bg-center blur-xs"

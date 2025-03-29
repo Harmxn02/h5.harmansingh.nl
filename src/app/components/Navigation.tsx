@@ -5,14 +5,14 @@ const Navigation = () => {
 		<div className="fixed top-0 z-50 w-full px-3 py-1 text-white transition sm:px-5">
 			<div className="mx-auto my-1.5 flex flex-row justify-between gap-2">
 				<div className="flex flex-row self-center text-xl font-medium">
-					<a href="/" className="md:self-center tracking-tight">
+					<a href="/" className="tracking-tight md:self-center">
 						H5 Research
 					</a>
 				</div>
 				<div className="flex space-x-1 self-center">
 					<div className="group hidden w-fit shrink-0 items-center sm:flex">
 						<a
-							className="flex text-xs font-medium text-gray-300 group-hover:text-white transition"
+							className="flex text-xs font-medium text-gray-300 transition group-hover:text-white"
 							href="/assets/files/whitepaper.pdf"
 							target="_blank"
 						>
