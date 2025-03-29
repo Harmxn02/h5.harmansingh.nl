@@ -9,7 +9,9 @@ const Navigation = () => {
 						H5 Research
 					</a>
 				</div>
-				<div className="flex space-x-1">
+				<div className="flex space-x-1 items-center">
+					
+					{/* External link */}
 					<div className="group hidden w-fit shrink-0 items-center sm:flex">
 						<a
 							className="flex text-xs font-medium text-gray-300 transition group-hover:text-white"
@@ -33,12 +35,16 @@ const Navigation = () => {
 							</div>
 						</a>
 					</div>
+					
+					{/* Link */}
 					<a
 						href="/"
 						className="flex rounded-full bg-transparent px-2 py-0.5 text-xs font-medium text-gray-300 transition hover:text-white"
 					>
 						Link
 					</a>
+					
+					{/* Another */}
 					<a
 						href="/"
 						className="rounded-full bg-gray-100/10 px-2.5 py-1 text-xs font-medium text-gray-300 transition hover:bg-gray-100/20 hover:text-white"
