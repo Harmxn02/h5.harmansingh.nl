@@ -47,9 +47,31 @@
 	/* Custom colours */
 	--color-brand-blue: #08306b;
 	--color-brand-teal: #008e87;
+
+	/* Custom fonts */
+	--font-instrument: var(--font-instrument);
+	--font-instrument-italic: var(--font-instrument-italic);
+}
+
+@font-face {
+	font-family: "Instrument Serif";
+	font-style: normal;
+	src: url("/public/fonts/Instrument_Serif/InstrumentSerif-Regular.ttf");
+	font-weight: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Instrument Serif Italic";
+	font-style: italic;
+	src: url("/public/fonts/Instrument_Serif/InstrumentSerif-Italic.ttf");
+	font-weight: normal;
+	font-display: swap;
 }
 
 :root {
+	--font-instrument: "Instrument Serif", serif;
+	--font-instrument-italic: "Instrument Serif Italic", serif;
 	--radius: 0.625rem;
 	--background: oklch(1 0 0);
 	--foreground: oklch(0.145 0 0);

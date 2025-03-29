@@ -6,10 +6,10 @@ const Hero = () => {
 			<div>
 				{/* Heading Section */}
 				<div className="mx-4 my-8 flex flex-col justify-center lg:items-center">
-					<h2 className="font-serif text-4xl sm:text-5xl">
+					<h2 className="font-instrument text-4xl tracking-tight sm:text-7xl">
 						Inspiring tagline
 					</h2>
-					<span className="font-serif text-4xl sm:text-5xl">
+					<span className="font-instrument text-4xl tracking-tight sm:text-7xl">
 						that spans two lines
 					</span>
 				</div>
