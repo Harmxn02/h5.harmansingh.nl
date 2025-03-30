@@ -148,3 +148,27 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+
+/* ------------- SCROLLBAR STYLING ------------- */
+
+/* width */
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #88888844;
+	border-radius: 0.25rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
