@@ -16,11 +16,12 @@ export default function Home() {
 						backgroundImage: `url(${AdamBackground.src})`,
 						backgroundSize: "cover",
 						backgroundPosition: "center",
+						filter: "blur(5px)",
 					}}
 				></div>
 
 				{/* Gradient Overlay */}
-				<div className="absolute inset-0 h-[100vh] bg-gradient-to-b from-black/50 to-black/100"></div>
+				<div className="absolute inset-0 h-[105vh] bg-gradient-to-b from-black/50 to-black/100"></div>
 
 				{/* Content */}
 				<div className="relative z-10">
@@ -32,7 +33,7 @@ export default function Home() {
 			</div>
 
 			{/* Other content below without background */}
-			<div className="relative z-10 mx-auto max-w-7xl">
+			<div className="relative z-10 mx-auto min-h-screen max-w-7xl">
 				<Posts />
 			</div>
 		</div>
