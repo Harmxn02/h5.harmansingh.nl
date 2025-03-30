@@ -27,7 +27,7 @@ const Post: React.FC<PostProps> = ({ id, image, title, body }) => {
 					{/* Overlay */}
 					<div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/90"></div>
 				</div>
-				<p className="z-50 -mt-8 ml-3 text-xs text-gray-300">#{id}</p>
+				<p className="z-20 -mt-8 ml-3 text-xs text-gray-300">#{id}</p>
 				<div className="mx-auto mt-4 flex max-w-[50ch] flex-col gap-1">
 					<h3 className="text-sm">{title}</h3>
 					<p className="text-xs text-gray-300">{truncatedBody}</p>

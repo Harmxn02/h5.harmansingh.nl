@@ -24,7 +24,7 @@ export default function Home() {
 				<div className="absolute inset-0 h-[105vh] bg-gradient-to-b from-black/50 to-black/100"></div>
 
 				{/* Content */}
-				<div className="relative z-10">
+				<div className="relative z-20">
 					<Navigation />
 					<section className="pt-[20vh] sm:pt-[50vh]">
 						<Hero />

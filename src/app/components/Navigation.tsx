@@ -1,16 +1,34 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 
 const Navigation = () => {
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY > 400); // Set the scroll threshold at 400px
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
-		<div className="fixed top-0 z-50 w-full px-3 py-1 text-white transition sm:px-5">
+		<div
+			className={`fixed top-0 z-50 w-full px-3 py-1 text-white transition sm:px-5 ${
+				isScrolled ? "bg-black/30 backdrop-blur-md" : "bg-transparent"
+			}`}
+		>
 			<div className="mx-auto my-1.5 flex flex-row justify-between gap-2">
 				<div className="flex flex-row text-xl font-medium">
 					<a href="/" className="tracking-tight">
 						H5 Research
 					</a>
 				</div>
-				<div className="flex space-x-1 items-center">
-					
+				<div className="flex items-center space-x-1">
 					{/* External link */}
 					<div className="group hidden w-fit shrink-0 items-center sm:flex">
 						<a
@@ -35,7 +53,7 @@ const Navigation = () => {
 							</div>
 						</a>
 					</div>
-					
+
 					{/* Link */}
 					<a
 						href="/"
@@ -43,7 +61,7 @@ const Navigation = () => {
 					>
 						Link
 					</a>
-					
+
 					{/* Another */}
 					<a
 						href="/"
