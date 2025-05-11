@@ -17,6 +17,7 @@ const Posts = () => {
 						image={post.image}
 						title={post.title}
 						body={post.body}
+						tags={post.tags}
 					/>
 				))}
 			</div>

@@ -8,10 +8,18 @@ interface PostProps {
 	image: StaticImageData | string;
 	title: string;
 	body: string;
+	tags?: string[];
 }
 
-const Post: React.FC<PostProps> = ({ id, image, title, body }) => {
+const Post: React.FC<PostProps> = ({ id, image, title, body, tags }) => {
 	const truncatedBody = body.length > 100 ? body.slice(0, 100) + "..." : body;
+
+	const truncateTag = (tag: string) => {
+		if (tag.length > 20) {
+			return tag.slice(0, 20) + "...";
+		}
+		return tag;
+	};
 
 	return (
 		<div>
@@ -32,6 +40,18 @@ const Post: React.FC<PostProps> = ({ id, image, title, body }) => {
 					<h3 className="text-sm">{title}</h3>
 					<p className="text-xs text-gray-300">{truncatedBody}</p>
 				</div>
+				{tags && (
+					<div className="flex flex-wrap gap-2 pt-2 text-xs text-gray-300">
+						{tags.map((tag, index) => (
+							<span
+								key={index}
+								className="cursor-pointer rounded-full bg-gray-800/70 px-2 py-1 transition-all duration-200 ease-in-out hover:bg-gray-700/70"
+							>
+								{truncateTag(tag)}
+							</span>
+						))}
+					</div>
+				)}
 			</div>
 		</div>
 	);
