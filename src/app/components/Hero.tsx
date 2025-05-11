@@ -28,7 +28,7 @@ const Hero = () => {
 					<div className="flex flex-col items-center gap-4 sm:flex-row">
 						{/* Primary CTA Button */}
 						<a
-							className="flex items-center rounded-full bg-gray-50 px-6 py-2 text-sm font-medium text-gray-800 transition hover:bg-white"
+							className="group flex items-center rounded-full bg-gray-100/10 px-6 py-2 text-sm font-medium text-gray-300 transition hover:bg-gray-100/20 hover:text-white"
 							href="/"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -40,7 +40,7 @@ const Hero = () => {
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 16 16"
 								fill="currentColor"
-								className="ml-2 h-4 w-4 text-gray-400 group-hover:text-gray-300"
+								className="ml-2 h-4 w-4 text-gray-400 group-hover:text-white"
 							>
 								<path
 									fillRule="evenodd"
@@ -52,7 +52,7 @@ const Hero = () => {
 
 						{/* Alternate CTA Button */}
 						<a
-							className="group relative flex cursor-pointer items-center text-sm font-medium text-white transition hover:underline"
+							className="group relative flex cursor-pointer items-center text-sm font-medium text-gray-200 transition hover:text-white"
 							href="/"
 						>
 							<span className="text-base font-medium">
