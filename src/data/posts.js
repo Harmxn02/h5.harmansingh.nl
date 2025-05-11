@@ -16,7 +16,7 @@ const posts = [
 	},
 	{
 		id: 3,
-		image: "https://placehold.co/100x100/000000/FFF",
+		image: "https://placehold.co/10x10/000000/FFF",
 		title: "Ea Molestias Quasi",
 		body: "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
 	},
@@ -34,7 +34,7 @@ const posts = [
 	},
 	{
 		id: 6,
-		image: "https://placehold.co/100x100/000000/FFF",
+		image: "https://placehold.co/10x10/000000/FFF",
 		title: "Dolorem Eum Magni",
 		body: "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae",
 	},
