@@ -24,13 +24,13 @@ const Post: React.FC<PostProps> = ({ id, image, title, body, tags }) => {
 	return (
 		<div>
 			<div className="flex flex-col gap-2 rounded-lg p-4 text-white">
-				<div className="relative">
+				<div className="group relative max-w-[700px] overflow-hidden rounded-md">
 					<Image
 						width={700}
 						height={350}
 						src={image}
 						alt={title}
-						className="rounded-md object-fill object-center"
+						className="object-fill object-center transition-all duration-200 ease-in-out group-hover:scale-110"
 					/>
 					{/* Overlay */}
 					<div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/90"></div>
