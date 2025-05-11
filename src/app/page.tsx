@@ -6,7 +6,7 @@ import Posts from "./components/posts/Posts";
 
 export default function Home() {
 	return (
-		<div className="relative max-w-screen gap-16 overflow-hidden bg-black font-[family-name:var(--font-geist-sans)]">
+		<div className="relative max-w-screen gap-16 overflow-hidden bg-black font-[family-name:var(--font-geist-sans)] selection:bg-yellow-400/30">
 			{/* Section with Background */}
 			<div className="relative min-h-screen">
 				{/* Blurred Background */}
