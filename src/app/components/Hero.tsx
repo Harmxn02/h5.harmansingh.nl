@@ -7,19 +7,19 @@ const Hero = () => {
 				{/* Heading Section */}
 				<div className="mx-4 my-8 flex flex-col justify-center lg:items-center">
 					<h2 className="font-instrument text-4xl tracking-tight sm:text-7xl">
-						Inspiring tagline
+						Advancing Ideas
 					</h2>
 					<span className="font-instrument text-4xl tracking-tight sm:text-7xl">
-						that spans two lines
+						That Shape Tomorrow
 					</span>
 				</div>
 
 				{/* Description Section */}
 				<div className="mt-6 flex justify-center lg:text-center">
 					<p className="mx-4 max-w-xl text-gray-300 sm:text-lg">
-						First sentence that explains the value you provide. And
-						another one for good measure, because why not?
-						<strong> Wow this text is bold.</strong>
+						Welcome to my research portfolio, where I share some
+						reports/papers I have written. (the ones I am allowed to
+						share)
 					</p>
 				</div>
 
@@ -34,7 +34,7 @@ const Hero = () => {
 							rel="noopener noreferrer"
 						>
 							<span className="text-base font-medium">
-								Primary CTA
+								Explore My Work
 							</span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const Hero = () => {
 							href="/"
 						>
 							<span className="text-base font-medium">
-								Alternate CTA - encouragement!
+								<a href="https://harmansingh.nl" target="_blank" rel="noopener noreferrer">Learn more about me</a>
 							</span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,8 @@ const Hero = () => {
 						href="/"
 						target="_blank"
 					>
-						Small line of text here about anything you want
+						Curious minds welcome — dive in, ask questions, and stay
+						inspired.
 					</a>
 				</div>
 			</div>
